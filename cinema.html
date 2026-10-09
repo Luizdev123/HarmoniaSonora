@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons de Cinema - SoundBoard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sons de Cinema</h1>
+        <p>Clique em um botão para reproduzir um efeito sonoro.</p>
+        <a href="index.html" class="voltar">Voltar ao Início</a>
+    </header>
+
+    <main>
+        <section class="painel-sons">
+            <h2>Escolha um som</h2>
+
+            <audio id="som"></audio>
+
+            <div class="area-imagem">
+                <img id="imagemSom" src="" alt="Imagem do som selecionado">
+            </div>
+
+            <div class="botoes">
+                <button class="som" onclick="tocarSom('assets/explosao.mp3', 'img/Explosão.jpg')">Explosão</button>
+                <button class="som" onclick="tocarSom('assets/suspense.mp3', 'img/Suspense.jpg')">Suspense</button>
+                <button class="som" onclick="tocarSom('assets/laser.mp3', 'img/Laser.jpg')">Laser</button>
+                <button class="som" onclick="tocarSom('assets/camera.mp3', 'img/Camera.jpg')">Câmera</button>
+                <button class="som" onclick="tocarSom('assets/impacto.mp3', 'img/Impacto.jpg')">Impacto</button>
+                <button class="som" onclick="tocarSom('assets/vitoria.mp3', 'img/Vitória.jpg')">Vitória</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SoundBoard - Sons de Cinema</p>
+    </footer>
+
+</body>
+</html>

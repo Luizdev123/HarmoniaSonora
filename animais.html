@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons de Animais - SoundBoard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sons de Animais</h1>
+        <p>Clique em um botão para ouvir o som de um animal.</p>
+        <a href="index.html" class="voltar">Voltar ao Início</a>
+    </header>
+
+    <main>
+        <section class="painel-sons">
+            <h2>Escolha um som</h2>
+
+            <audio id="som"></audio>
+
+            <div class="area-imagem">
+                <img id="imagemSom" src="" alt="Imagem do som selecionado">
+            </div>
+
+            <div class="botoes">
+                <button class="som" onclick="tocarSom('assets/cachorro.mp3', 'img/Cachorro.jpg')">Cachorro</button>
+                <button class="som" onclick="tocarSom('assets/gato.mp3', 'img/Gato.jpg')">Gato</button>
+                <button class="som" onclick="tocarSom('assets/leao.mp3', 'img/Leão.jpg')">Leão</button>
+                <button class="som" onclick="tocarSom('assets/lobo.mp3', 'img/Lobo.jpg')">Lobo</button>
+                <button class="som" onclick="tocarSom('assets/passaro.mp3', 'img/Passaro.jpg')">Pássaro</button>
+                <button class="som" onclick="tocarSom('assets/sapo.mp3', 'img/Sapo.jpg')">Sapo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SoundBoard - Sons de Animais</p>
+    </footer>
+
+</body>
+</html>

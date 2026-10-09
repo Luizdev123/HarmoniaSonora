@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons de Jogos Retrô - SoundBoard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sons de Jogos Retrô</h1>
+        <p>Clique em um botão para ouvir um som clássico de videogame.</p>
+        <a href="index.html" class="voltar">Voltar ao Início</a>
+    </header>
+
+    <main>
+        <section class="painel-sons">
+            <h2>Escolha um som</h2>
+
+            <audio id="som"></audio>
+
+            <div class="area-imagem">
+                <img id="imagemSom" src="" alt="Imagem do som selecionado">
+            </div>
+
+            <div class="botoes">
+                <button class="som" onclick="tocarSom('assets/moeda.mp3', 'img/Moeda.jpg')">Moeda</button>
+                <button class="som" onclick="tocarSom('assets/pulo.mp3', 'img/Pulo.jpg')">Pulo</button>
+                <button class="som" onclick="tocarSom('assets/acerto.mp3', 'img/images.png')">Acerto</button>
+                <button class="som" onclick="tocarSom('assets/powerup.mp3', 'img/PowerUp.jpg')">PowerUp</button>
+                <button class="som" onclick="tocarSom('assets/subir-nivel.mp3', 'img/Level UP.jpg')">Subir de Nível</button>
+                <button class="som" onclick="tocarSom('assets/fim-de-jogo.mp3', 'img/Fim-de-Jogo.jpg')">Game Over</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SoundBoard - Sons de Jogos Retrô</p>
+    </footer>
+
+</body>
+</html>
